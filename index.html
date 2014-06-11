@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Chloe Song</title>
+ 
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+ 
+<script type="text/javascript">
+$(document).ready(function() 
+{
+		// fade in content.
+		$( '#name' ).fadeIn(2000);
+        $( '#profpic').fadeIn(4500);  
+		$( '#links').fadeIn(4500);	
+		$( '#othertext').fadeIn(6500);	      
+});
+</script>
+
+<style type="text/css">
+
+//CSS
+body {
+    background-color: #fffff;
+}
+
+#name
+{
+	display:none;
+	font-family: "Gill Sans";
+    font-weight: 300;
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    word-spacing: 25px;	
+    line-height: 250px;
+}
+
+.circletag {
+     position: relative;
+     bottom: 50px;
+     width: 120px;
+     height: 120px;
+     overflow: visible;
+     margin-left: auto;
+     margin-right: auto;
+     background-image: url('profilepic.png');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     display: block;
+     border-radius: 62px;
+     -webkit-border-radius: 62px;
+     -moz-border-radius: 62px;   
+     border: 4px solid #eee;
+     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+}
+
+/* Gradient color1 - color2 - color1 */
+        
+hr {
+    z-index: -1;
+    position: relative;
+    bottom: 130px;
+    height: 2px;
+    background-color: #000;
+    color: #000;
+    border: 0 none;
+    margin-bottom: 24px;
+}
+
+#profpic {
+    display: none;
+}
+
+#links
+{
+    font-family: "helvetica";
+    font-size: 17px;
+    line-height: 50px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: -4px;
+    position: relative;
+    bottom: 155px;
+	display: none;
+	border-bottom: 2px solid;
+}
+
+#othertext
+{
+    display:none;
+}
+
+p {
+    position: relative;
+    bottom: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Gill Sans";
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 25px;
+    max-width:550px;
+    text-align: justify;
+}
+
+/* unvisited/visited link */
+a:link, a:visited {	
+    color: #000000;
+}
+
+/* mouse over/selected link */
+a:hover, a:active {
+    color: #C0C0C0;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- name title -->
+<script type="text/javascript">document.write( '<div id="name">');</script>
+CHLOE SONG
+<script type="text/javascript">document.write( '</div><!-- name -->');</script>
+
+<!-- profile pic  -->
+<script type="text/javascript">document.write( '<div id="profpic">' );</script>
+    <div class="circletag"></div>
+    <hr>
+    <hr>
+<script type="text/javascript">document.write( '</div><!-- profpic -->' );</script>
+
+<!-- links -->
+<script type="text/javascript">document.write( '<div id="links">' );</script>
+ 	<a href="http://www.linkedin.com/pub/chloe-song/88/839/4a" target="_blank">linkedin</a> &nbsp;
+	<a href="https://github.com/cnsong17" target="_blank">github</a> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	<a href="RESUME.docx">resumé</a> &nbsp;
+    <a href="http://my-artsy-fartsies.tumblr.com/" target="_blank">my art</a>
+<script type="text/javascript">document.write( '</div><!-- links -->' );</script>
+
+<!-- text -->
+<script type="text/javascript">document.write( '<div id="othertext">' );</script>
+    <p>Hello, my name is Chloe and I'm a rising Sophomore studying Electrical Engineering at Princeton University. <br><br> I'm interested in drawing, reading, robotics, design, piano, computer science, fashion, and music. At Princeton I'm a member of Princeton Robotics and Princeton Faith and Action and hope to eventually obtain a certificate in Robotics and Intelligent Systems.  <br><br>You can contact me at cnsong@princeton.edu.</p>
+<br><script type="text/javascript">document.write( '</div><!-- othertext -->' );</script>
+
+</body>
+</html>
