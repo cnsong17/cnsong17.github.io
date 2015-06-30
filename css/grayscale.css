@@ -4,6 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
 body {
     width: 100%;
     height: 100%;
@@ -17,9 +18,39 @@ html {
     height: 100%;
 }
 
-h1,
-h2,
-h3,
+h1 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: "Gill Sans";
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgba(102,102,255,1);
+    outline: #C0C0C0 solid thin;
+}
+
+h2 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: "Gill Sans";
+    font-weight: 400;
+    letter-spacing: 1px;
+    -webkit-animation: fadeInOut 3s;
+    -moz-animation: fadeInOut 3s;
+    animation: fadeInOut 3s;
+}
+
+/* A personal resume text */
+h3 {
+    text-transform: uppercase;
+    font-family: "Gill Sans";
+    font-size: 1.6vw;
+    font-weight: 100;
+    line-height: 1.5;
+    -webkit-animation: fadeInOut 3s;
+    -moz-animation: fadeInOut 3s;
+    animation: fadeInOut 3s;
+}
+
 h4,
 h5,
 h6 {
@@ -67,6 +98,9 @@ a:focus {
     text-transform: uppercase;
     font-family: "Gill Sans";
     background-color: #000;
+    -webkit-animation: fadeInOut 3s;
+    -moz-animation: fadeInOut 3s;
+    animation: fadeInOut 3s;
 }
 
 .navbar-custom .navbar-brand {
@@ -94,7 +128,7 @@ a:focus {
 
 .navbar-custom .nav li.active {
     outline: nonte;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(102,102,255,.7);
 }
 
 .navbar-custom .nav li a {
@@ -107,7 +141,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(102,102,1255,.7);
 }
 
 @media(min-width:767px) {
@@ -127,7 +161,7 @@ a:focus {
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 1px solid rgba(102,102,255,.7);
     }
 }
 
@@ -138,8 +172,9 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/horse-head.jpg) no-repeat bottom center scroll;
+    background: url(../img/IMG_3798.jpeg) no-repeat bottom center scroll;
     background-color: #000;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -166,7 +201,7 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 80px;
+        font-size: 6.5vw;
     }
 
     .intro .intro-body .intro-text {
@@ -250,11 +285,18 @@ a:focus {
 
 .content-section {
     width: 100%;
-    height: auto;
-    padding: 100px 0;   
+    height: 100%;  
+    background:no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .about-section {
+    background-color: white;
+    color: black;
     width: 100%;
     height: 100%;
     padding-top: 300px;
@@ -291,10 +333,14 @@ a:focus {
     }
 
     .resume-section {
-        padding: 200px 0;
+        padding: 150px 0;
     }
 
     .design-section {
+        padding: 100px 0;
+    }
+
+    .art-section {
         padding: 200px 0;
     }
 
@@ -346,11 +392,7 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
-}
-
-footer p {
-    margin: 0;
+    bottom: -400px;
 }
 
 ::-moz-selection {
@@ -376,3 +418,48 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear forwards;
+  }
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+  0% {
+        opacity: 0;
+    }
+    50% {
+       opacity: 50%;
+    }
+    84% {
+       opacity: 90%;
+    }
+    100% {
+       opacity: 1;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+       opacity: 50%;
+    }
+    84% {
+       opacity: 75%;
+    }
+    100% {
+       opacity: 1;
+    }
+}
+
