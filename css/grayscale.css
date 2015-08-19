@@ -8,7 +8,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Gill Sans";
+    font-family: "Geneva";
     color: #fff;
     background-color: #000;
 }
@@ -21,7 +21,7 @@ html {
 h1 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Gill Sans";
+    font-family: "Geneva";
     font-weight: 400;
     letter-spacing: 1px;
     color: rgba(102,102,255,1);
@@ -31,7 +31,7 @@ h1 {
 h2 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Gill Sans";
+    font-family: "Geneva";
     font-weight: 400;
     letter-spacing: 1px;
     -webkit-animation: fadeInOut 3s;
@@ -41,9 +41,9 @@ h2 {
 
 /* A personal resume text */
 h3 {
-    text-transform: uppercase;
     font-family: "Gill Sans";
-    font-size: 1.6vw;
+    color: white;
+    font-size: 1.7vw;
     font-weight: 100;
     line-height: 1.5;
     -webkit-animation: fadeInOut 3s;
@@ -56,7 +56,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Gill Sans";
+    font-family: "Geneva";
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -96,7 +96,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: "Gill Sans";
+    font-family: "Geneva";
     background-color: #000;
     -webkit-animation: fadeInOut 3s;
     -moz-animation: fadeInOut 3s;
@@ -128,7 +128,7 @@ a:focus {
 
 .navbar-custom .nav li.active {
     outline: nonte;
-    background-color: rgba(102,102,255,.7);
+    background-color: rgba(0,0,0,.7);
 }
 
 .navbar-custom .nav li a {
@@ -141,7 +141,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: rgba(102,102,1255,.7);
+    background-color: rgba(40,240,255,.65);
 }
 
 @media(min-width:767px) {
@@ -150,6 +150,7 @@ a:focus {
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
+
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -184,6 +185,7 @@ a:focus {
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
+    top: 25px;
 }
 
 .intro .intro-body .brand-heading {
@@ -348,7 +350,7 @@ a:focus {
 
 .btn {
     text-transform: uppercase;
-    font-family: "Gill Sans";
+    font-family: "Geneva";
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -424,8 +426,30 @@ body {
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
+  -webkit-animation: dash 3s linear forwards;
   animation: dash 3s linear forwards;
   }
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+  0% {
+        opacity: 0;
+    }
+    50% {
+       opacity: 50%;
+    }
+    75% {
+       opacity: 90%;
+    }
+    100% {
+       opacity: 1;
+    }
+}
 
 @keyframes dash {
   from {
