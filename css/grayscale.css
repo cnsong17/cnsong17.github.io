@@ -19,13 +19,14 @@ html {
 }
 
 h1 {
-    margin: 0 0 35px;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 100;
+    font-size: 20px;
     letter-spacing: 1px;
-    color: rgba(102,102,255,1);
-    outline: #C0C0C0 solid thin;
+    padding: 25px;
+    border: 1px solid white;
+    margin: 25px;
 }
 
 h2 {
@@ -162,7 +163,7 @@ a:focus {
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(102,102,255,.7);
+        border-bottom: 1px solid rgba(40,240,255,.65);
     }
 }
 
@@ -186,6 +187,16 @@ a:focus {
     display: table-cell;
     vertical-align: middle;
     top: 25px;
+}
+
+/* CSS FOR TEMP PAGE*/
+.intro .temp-body {
+    background-color: rgba(40,240,255,.35);
+    display: table-cell;
+    vertical-align: middle;
+    padding: 25px;
+    border: 20px solid rgba(0,0,0,0.3);
+    margin: 25px;
 }
 
 .intro .intro-body .brand-heading {
