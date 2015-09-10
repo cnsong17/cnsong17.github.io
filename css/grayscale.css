@@ -191,7 +191,7 @@ a:focus {
 
 /* CSS FOR TEMP PAGE*/
 .intro .temp-body {
-    background-color: rgba(40,240,255,.35);
+    background-color: rgba(79,79,79,.7);
     display: table-cell;
     vertical-align: middle;
     padding: 25px;
